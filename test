@@ -1,0 +1,27 @@
+using System;
+namespace ConsoleApplication4
+{
+    class bt2ch2
+    {
+        static void Main(string[] args)
+        {
+            //khai bao bien,hang so
+            int sale1 = 2;
+            int sale2 = 4;
+            int commissionRate = 0;
+            //input
+            Console.WriteLine("Nhap gia tri commissionRate :");
+            commissionRate = int.Parse(Console.ReadLine());
+            //processing
+            //tinh totalSale
+            double totalSale = sale1 + sale2;
+            //tinh commission
+            double commission = totalSale * commissionRate;
+            //output 
+            Console.WriteLine("Gia tri totalSale = {0}", totalSale);
+            Console.WriteLine("Gia tri commission = {0}", commission);
+            //dung man hinh
+            Console.ReadKey();
+        }
+    }
+}
